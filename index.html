@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1bea419441.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="input-group rounded" id="searchForm-input">
+        <input
+          id="cityInput"
+          type="text"
+          name="q"
+          autofocus="on"
+          class="form-control rounded"
+          placeholder="Search location.."
+        />
+
+        <button type="submit" class="btn btn-primary" id="button-search">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="current-location-button"
+      >
+        <i class="fas fa-search"></i> Current location
+      </button>
+
+      <h4 id="latitude-longtitude"></h4>
+
+      <h1 id="city">Amsterdam Netherlands</h1>
+      <h6>Monday, January 30, 15:00</h6>
+      <div class="center-align">
+        <span class="temperature" id="temperature"> 2</span>
+        <span class="celsius">°C</span>
+      </div>
+      <h5 id="description">Mostly Cloudy</h5>
+      <i class="fa-solid fa-cloud todays-weather-icon"></i>
+
+      <ul>
+        <li id="feels-like">Feels Like: 0°</li>
+        <li id="humidity">Humidity: 70%</li>
+        <li id="windSpeed">Wind: 20km/h</li>
+      </ul>
+
+      <br />
+      <hr />
+
+      <h5>4 Day Forecast</h5>
+      <br />
+
+      <div class="four-day-forcast">
+        <div class="forcast-days">
+          <div class="row">
+            <div class="col-3">Friday</div>
+            <div class="col-3">Saturday</div>
+            <div class="col-3">Sunday</div>
+            <div class="col-3">Monday</div>
+          </div>
+        </div>
+
+        <div class="daily-forcast-icon">
+          <div class="row">
+            <div class="col-3">
+              <i class="fa-solid fa-sun forecast-icon"></i>
+            </div>
+            <div class="col-3">
+              <i class="fa-solid fa-snowflake forecast-icon"></i>
+            </div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-showers-heavy forecast-icon"></i>
+            </div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-showers-heavy forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="high-low-temp">
+          <div class="row">
+            <div class="col-3">High 5°C</div>
+            <div class="col-3">High 0°C</div>
+            <div class="col-3">High 3°C</div>
+            <div class="col-3">High 4°C</div>
+          </div>
+        </div>
+
+        <div class="high-low-temp">
+          <div class="row">
+            <div class="col-3">Low 1°C</div>
+            <div class="col-3">Low -3°C</div>
+            <div class="col-3">Low 1°C</div>
+            <div class="col-3">Low 0°C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>

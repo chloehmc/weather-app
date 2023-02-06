@@ -1,0 +1,74 @@
+body {
+  font-family: "Space Mono", monospace;
+  background-image: url("https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-top: 25px;
+  font-weight: 800;
+}
+
+h6 {
+  padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.center-align {
+  margin-left: 55px;
+}
+.temperature {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.celsius {
+  text-decoration: none;
+}
+
+h5 {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 60px;
+  border: 5px black;
+  border-radius: 30px;
+  background: rgba(247, 245, 245, 0.4);
+}
+
+.todays-weather-icon {
+  font-size: 100px;
+}
+
+.forcast-days {
+  font-size: 16px;
+  font-weight: 600;
+}
+.daily-forcast-icon {
+  font-size: 40px;
+}
+
+.high-low-temp {
+  font-size: 14px;
+}
